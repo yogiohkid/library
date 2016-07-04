@@ -5,4 +5,20 @@
         <attr name="border_inside_color" format="color"/>
         <attr name="border_outside_color" format="color"/>
     </declare-styleable>
+    
+    <declare-styleable name = "viewfinderview">
+        <attr name = "angular_width" format="dimension"/>
+        <attr name = "angular_length" format="dimension"/>
+        <attr name = "box_color" format="color"/>
+        <attr name = "scan_line_width" format="dimension"/>
+        <attr name = "scan_line_spacing" format="dimension"/>
+        <attr name = "scan_line_speed" format="dimension"/>
+        <attr name = "text_size" format="dimension"/>
+        <attr name = "text_color" format="color"/>
+        <attr name = "text" format="string"/>
+        <attr name = "text_spacing" format="dimension"/>
+        <attr name = "mask_color" format="color"/>
+        <attr name = "result_color" format="color"/>
+        <attr name = "result_point_color" format="color"/>
+    </declare-styleable>
 </resources>

@@ -1,1 +1,1 @@
-include ':library', ':translation'
+include ':library', ':translation', ':qrscanerdemo'
