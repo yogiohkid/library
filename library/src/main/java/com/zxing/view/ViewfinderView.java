@@ -30,6 +30,7 @@ import android.view.View;
 
 import com.google.zxing.ResultPoint;
 import com.joker.jokerlibrary.R;
+import com.joker.jokerlibrary.utils.DensityUtil;
 import com.zxing.camera.CameraManager;
 
 import java.util.Collection;
@@ -106,16 +107,16 @@ public final class ViewfinderView extends View
     private void setCustomAttributes(AttributeSet attrs)
     {
         TypedArray a = mContext.obtainStyledAttributes(attrs, R.styleable.viewfinderview);
-        angularWidth = a.getDimensionPixelSize(R.styleable.viewfinderview_angular_width,3);
-        angularLength = a.getDimensionPixelSize(R.styleable.viewfinderview_angular_length,20);
+        angularWidth = a.getDimensionPixelSize(R.styleable.viewfinderview_angular_width, DensityUtil.dip2px(mContext,3));
+        angularLength = a.getDimensionPixelSize(R.styleable.viewfinderview_angular_length,DensityUtil.dip2px(mContext,20));
         boxColor = a.getColor(R.styleable.viewfinderview_box_color,Color.WHITE);
-        scanLineWidth = a.getDimensionPixelSize(R.styleable.viewfinderview_scan_line_width,3);
-        scanLineSpacing = a.getDimensionPixelSize(R.styleable.viewfinderview_scan_line_spacing,3);
-        scanLineSpeed = a.getDimensionPixelSize(R.styleable.viewfinderview_scan_line_speed,2);
-        textSize = a.getDimensionPixelSize(R.styleable.viewfinderview_text_size,16);
+        scanLineWidth = a.getDimensionPixelSize(R.styleable.viewfinderview_scan_line_width,DensityUtil.dip2px(mContext,3));
+        scanLineSpacing = a.getDimensionPixelSize(R.styleable.viewfinderview_scan_line_spacing,DensityUtil.dip2px(mContext,3));
+        scanLineSpeed = a.getDimensionPixelSize(R.styleable.viewfinderview_scan_line_speed,DensityUtil.dip2px(mContext,2));
+        textSize = a.getDimensionPixelSize(R.styleable.viewfinderview_text_size,DensityUtil.dip2px(mContext,16));
         textColor = a.getColor(R.styleable.viewfinderview_text_color,Color.WHITE);
         text = (String) a.getText(R.styleable.viewfinderview_text);
-        text_spacing = a.getDimensionPixelSize(R.styleable.viewfinderview_text_spacing,30);
+        text_spacing = a.getDimensionPixelSize(R.styleable.viewfinderview_text_spacing,DensityUtil.dip2px(mContext,30));
         maskColor = a.getColor(R.styleable.viewfinderview_mask_color,0x60000000);
         resultColor = a.getColor(R.styleable.viewfinderview_result_color,0xb0000000);
         resultPointColor = a.getColor(R.styleable.viewfinderview_result_point_color,0x0ffff00);
@@ -197,12 +198,11 @@ public final class ViewfinderView extends View
 
 
             //画扫描框下面的字
-            paint.setColor(Color.WHITE);
+            paint.setColor(textColor);
             paint.setTextSize(textSize);
-            paint.setAlpha(0x40);
             paint.setTypeface(Typeface.create("System", Typeface.BOLD));
             float textLength = paint.measureText(text);
-            canvas.drawText(text, (width - textLength) / 2, (float) (frame.bottom + (float) text_spacing), paint);
+            canvas.drawText(text, (width - textLength) / 2,  (frame.bottom + (float) text_spacing), paint);
 
 
             Collection<ResultPoint> currentPossible = possibleResultPoints;
