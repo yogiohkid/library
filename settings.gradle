@@ -1,1 +1,1 @@
-include ':library', ':translation', ':qrscanerdemo'
+include ':library', ':translation', ':qrscanerdemo', ':safe-java-js-bridge'
