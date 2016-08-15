@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/crashhandler" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/qrscanerdemo" />
             <option value="$PROJECT_DIR$/safe-java-js-bridge" />
@@ -18,6 +19,7 @@
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/crashhandler" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/qrscanerdemo" />
             <option value="$PROJECT_DIR$/safe-java-js-bridge" />
