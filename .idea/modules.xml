@@ -6,9 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/crashhandler/crashhandler.iml" filepath="$PROJECT_DIR$/crashhandler/crashhandler.iml" />
       <module fileurl="file://$PROJECT_DIR$/safe-java-js-bridge/jsbridgedemo.iml" filepath="$PROJECT_DIR$/safe-java-js-bridge/jsbridgedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/qrscanerdemo/qrscanerdemo.iml" filepath="$PROJECT_DIR$/qrscanerdemo/qrscanerdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/safe-java-js-bridge/safe-java-js-bridge.iml" filepath="$PROJECT_DIR$/safe-java-js-bridge/safe-java-js-bridge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/translation/translation.iml" filepath="$PROJECT_DIR$/translation/translation.iml" />
     </modules>
   </component>
 </project>
